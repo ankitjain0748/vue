@@ -1,0 +1,47 @@
+Reactive Array: The array students contains objects, where each object represents a student with name, age, and class.
+
+v-for loop: We use the v-for directive to loop over the students array and display each student's details.
+
+Key Attribute: Each student is rendered using the index of the array as a unique key for efficient rendering
+
+v-for directive: Replaced the .map function with the v-for directive, which is the Vue way of looping over arrays in the template.
+
+
+Reactive Data:
+
+students: This holds the list of students.
+newStudent: This is the reactive object bound to the form inputs for adding new student details.
+Form Structure:
+
+The form is built using standard input fields for name, age, and class.
+The v-model directive is used to bind each form field to the newStudent object.
+The form's @submit.prevent directive calls the addStudent function when the form is submitted, preventing the default form submission behavior.
+Add Student Function:
+
+The addStudent function checks if all fields have been filled in. If they are, it adds the new student to the students array and resets the input fields.
+
+
+
+Key Differences in Vue.js:
+State Management:
+
+In React, we use useState to manage state for each form.
+In Vue.js, we use reactive to manage the form states.
+Input Handling:
+
+In React, we use onChange to handle each input change.
+In Vue.js, we use v-model for two-way data binding to automatically sync input values with state.
+Form Submission:
+
+In both React and Vue, we prevent the default form submission behavior using @submit.prevent.
+Rendering:
+
+In Vue, we use a single template for rendering the form and bind the input fields using v-model.
+This way, you can manage multiple forms in Vue.js just like you do in React, but with simpler state management and template syntax.
+
+
+
+
+
+
+
